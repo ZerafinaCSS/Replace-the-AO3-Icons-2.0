@@ -1,0 +1,422 @@
+/*============================================================
+REPLACE THE AO3 ICONS 2.0 - default color scheme
+============================================================*/ 
+
+/*======= NEW IMAGESET =======*/
+
+.required-tags .rating-notrated,
+.required-tags .rating-general-audience,
+.required-tags .rating-explicit, 
+.required-tags .rating-mature, 
+.required-tags .rating-teen, 
+.required-tags .category-femslash, 
+.required-tags .category-gen, 
+.required-tags .category-slash, 
+.required-tags .category-none,
+.required-tags .category-het, 
+.required-tags .category-multi,
+.required-tags .category-other, 
+.required-tags .complete-no, 
+.required-tags .complete-yes, 
+.required-tags .warning-yes, 
+.required-tags .warning-no, 
+.required-tags .warning-choosenotto, 
+.required-tags .external-work, 
+.status .private .text, 
+.status .public, 
+.status .hidden, 
+.status .rec, 
+.status .count, 
+.index .skins .icon, 
+.index .mystery .icon,
+.index .tag .icon,
+.index .tagset .icon, 
+.comment .icon .anonymous, 
+.comment .icon .visitor, 
+.abbreviated .icon .anonymous, 
+.abbreviated .icon .visitor, 
+.skins .primary .icon, 
+.admin .primary .icon, 
+.tagset .primary .icon, 
+.tag .primary .icon,
+a.rss span,
+a.rss span::before,
+p.kudos,
+p.kudos::before,
+#symbols-key dl img,
+#bookmark-symbols-key img,
+img[src$="/images/skins/iconsets/default/icon_user.png"], /* this is the default user icon */
+img[src$="/images/skins/iconsets/default/icon_collection.png"], /* this is default collection icon */
+img[src$="/images/lockblue.png"] /* this is the lock for restricted works (not originally part of the imageset) */ {
+  background-image: url("https://images.squidge.org/images/2024/11/16/AO3_imageset_transparent.png"); /* link to the new imageset */
+  background-size: 200px 835px; /* size of the new imageset needs to be the same as the original */
+}
+
+ul.required-tags,
+.bookmark .status span,
+.blurb .icon {
+	opacity: 1 !important; /* some public site skins like Reversi set the opacity of some icons to 0.9, which I want to prevent here */
+}
+
+/*======= ICONS FOR USERS, COLLECTIONS, TAGS etc. =======*/
+
+/* default user icon */
+img[src$="/images/skins/iconsets/default/icon_user.png"] {
+  padding: 100px 0 0 100px;
+  width: 0 !important;
+  height: 0 !important;
+  background-position: 0px -75px;
+  background-color: #6e6e6e; /* change color for all default user icons here */
+  box-shadow: inset 0 0 0 1.5px; /* border for default user icons (use box-shadow instead of border so it doesn't mess with the size of the icons) */
+  color: #ddd; /* border color */
+}
+
+/* abbreviated default user icon => used for unread messages on splash page */
+.index:not(.comment) .abbreviated img[src$="/images/skins/iconsets/default/icon_user.png"] {
+  padding: 75px 0 0 75px;
+  background-position: 0px -375px;
+}
+
+/* default user index icon */
+.index:not(.comment) img[src$="/images/skins/iconsets/default/icon_user.png"] {
+  padding: 55px 0 0 55px;
+  background-position: 0px -525px;
+}
+
+/* little default user icon in header */
+#greeting img[src$="/images/skins/iconsets/default/icon_user.png"] {
+  background-size: 201.5%;
+  padding: 1.786em 0 0 1.786em;
+  background-position: 0px -19.1px;
+}
+
+/* anon comment icon */
+.comment .icon .anonymous {
+  background-color: #6e6e6e; /* background color */
+  box-shadow: inset 0 0 0 1.5px;  /* border */
+  color: rgba(0, 0, 0, 0.15); /* border color */
+}
+
+/* guest comment icon */
+.comment .icon .visitor {
+  background-color: #6e6e6e; /* background color */
+  box-shadow: inset 0 0 0 1.5px; /* border */
+  color: rgba(0, 0, 0, 0.15); /* border color */
+}
+
+/* default collection icon */
+img[src$="/images/skins/iconsets/default/icon_collection.png"] {
+  padding: 100px 0 0 100px;
+  width: 0 !important;
+  height: 0 !important;
+  background-position: -100px -175px;
+  background-color: #616C90; /* color for all collection icons */
+  box-shadow: inset 0 0 0 1.5px; /* border */
+  color: rgba(0, 0, 0, 0.15); /* border color */
+}
+
+/* default collection index icon */
+.collection.index img[src$="/images/skins/iconsets/default/icon_collection.png"] {
+  padding: 55px 0 0 55px;
+  background-position: -55px -525px;
+}
+
+/*  tag icons */
+.index .tagset .icon,
+.tagset .primary .icon,
+.tag .primary .icon {
+  background-color: #900; /* background color */
+  box-shadow: inset 0 0 0 1.5px; /* border */
+  color: rgba(0, 0, 0, 0.15); /* border color */
+}
+
+/* icon for unrevealed works */
+.index .mystery .icon {
+  background-color: #616C90; /* background color */
+  box-shadow: inset 0 0 0 1.5px #ddd, inset 0 0 0 3px #fff; /* double border */
+}
+
+/* AO3 admin icon => seen on A03 news posts */
+.admin .primary .icon {
+  background-color: #900; /* background color */
+  box-shadow: inset 0 0 0 2px; /* border */
+  color: rgba(0, 0, 0, 0.75); /* border color */
+}
+
+/* default icon for AO3 skins */
+.skins .primary .icon,
+.index .skins .icon {
+  background-color: #900; /* change color here */
+  box-shadow: inset 0 0 0 1.5px; /* border */
+  color: #ddd; /* border color */
+}
+
+/*======= CONTENT SYMBOLS =======*/
+
+/* sets the size of the symbols keys icons */
+#symbols-key dl img,
+#bookmark-symbols-key img {
+  width: 0 !important;
+  height: 0 !important;
+  padding: 25px 0 0 25px;
+}
+
+/* border for content symbols */
+.blurb ul.required-tags li span,
+.bookmark .status span:not(.status .private),
+#symbols-key dl img,
+#bookmark-symbols-key img {
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 1.5px; /* use box-shadow instead of border so it doesn't mess with the size of the icons as box-sizing isn't an option here */
+}
+
+/* empty symbols boxes (no rating, category or warning) */
+.required-tags .rating-notrated,
+.required-tags .category-none, 
+.required-tags .warning-no, 
+.status .count,
+img[src$="/images/skins/iconsets/default/rating-notrated.png"],
+img[src$="/images/skins/iconsets/default/category-none.png"],
+img[src$="/images/skins/iconsets/default/warning-no.png"] {
+  background-position: -150px 0px;
+  background-color: #fff; /* background color */
+  color: #ddd; /* border color */
+}
+
+/*==== rating ====*/
+/*
+I use rgba colors (e.g. "color: rgba(0, 0, 0, 0.1)") to create transparent borders so that the background color of the icons shows through.
+This automatically gives the icons of the content symbols borders that have a slightly darker color than the background color.
+You can replace it with any other rgb, rgba or hex color.
+*/
+
+/* General Audiences */
+.required-tags .rating-general-audience,
+img[src$="/images/skins/iconsets/default/rating-general-audience.png"] {
+  background-position: -50px -25px;
+  background-color: #8bc101; /* background color */
+  color: rgba(0, 0, 0, 0.1); /* border color */
+}
+
+/* Teen And Up Audiences */
+.required-tags .rating-teen,
+img[src$="/images/skins/iconsets/default/rating-teen.png"] {
+  background-position: 0px -25px;
+  background-color: #f5ce00; /* background color */
+  color: rgba(0, 0, 0, 0.1); /* border color */
+}
+
+/* Mature */
+.required-tags .rating-mature,
+img[src$="/images/skins/iconsets/default/rating-mature.png"] {
+  background-position: -75px -25px;
+  background-color: #ef851c; /* background color */
+  color: rgba(0, 0, 0, 0.1); /* border color */
+}
+
+/* Explicit */
+.required-tags .rating-explicit,
+img[src$="/images/skins/iconsets/default/rating-explicit.png"] {
+  background-position: -25px -25px;
+  background-color: #900; /* background color */
+  color: rgba(0, 0, 0, 0.1); /* border color */
+}
+
+/*=== Relationships, pairings, orientations ===*/
+
+/* F/F */
+.required-tags .category-femslash, 
+img[src$="/images/skins/iconsets/default/category-femslash.png"] {
+  background-position: -25px 0px;
+  background-color: #900; /* background color */
+  color: rgba(0, 0, 0, 0.1); /* border color */
+}
+
+/* F/M */
+.required-tags .category-het, 
+img[src$="/images/skins/iconsets/default/category-het.png"] {
+  background-position: -75px 0px;
+  background-color: #910679; /* background color */
+  color: rgba(0, 0, 0, 0.1); /* border color */
+}
+
+/* Gen */
+.required-tags .category-gen,
+img[src$="/images/skins/iconsets/default/category-gen.png"] {
+  background-position: -50px 0;
+  background-color: #8bc101; /* background color */
+  color: rgba(0, 0, 0, 0.1); /* border color */
+}
+
+/* M/M */
+.required-tags .category-slash,
+img[src$="/images/skins/iconsets/default/category-slash.png"] {
+  background-position: 0px 0px;
+  background-color: #0049b8; /* background color */
+  color: rgba(0, 0, 0, 0.1); /* border color */
+}
+
+/* Multi */
+.required-tags .category-multi, 
+img[src$="/images/skins/iconsets/default/category-multi.png"] {
+  background: conic-gradient(#910679 90deg, #0049b8 90deg 180deg, #900 180deg 270deg, #8bc101 270deg) !important;
+  /* colors are in this order (not the same as displayed order): f/m, m/m, f/f, gen */
+  color: rgba(0, 0, 0, 0.1); /* border color */
+}
+
+/* Other relationships */
+.required-tags .category-other, 
+img[src$="/images/skins/iconsets/default/category-other.png"] {
+  background-position: -125px 0px;
+  background-color: #000; /* background color */
+  color: rgba(0, 0, 0, 0.1); /* border color */
+}
+
+/*=== Content warnings ===*/
+
+/* Author chose not to warn */
+.required-tags .warning-choosenotto, 
+img[src$="/images/skins/iconsets/default/warning-choosenotto.png"] {
+  background-position: -125px -25px;
+  background-color: #ef851c; /* background color */
+  color: rgba(0, 0, 0, 0.1); /* border color */
+}
+
+/* Warnings apply */
+.required-tags .warning-yes,
+img[src$="/images/skins/iconsets/default/warning-yes.png"] {
+  background-position: -150px -25px;
+  background-color: #900; /* background color */
+  color: rgba(0, 0, 0, 0.1); /* border color */
+}
+
+/* External work */
+.required-tags .external-work,
+img[src$="/images/skins/iconsets/default/warning-external-work.png"] {
+  background-position: -75px -50px;
+  background-color: #107cb9; /* background color */
+  color: rgba(0, 0, 0, 0.1); /* border color */
+}
+
+/*=== Completion status ===*/
+
+/* uncomplete/unfulfilled */
+.required-tags .complete-no, 
+img[src$="/images/skins/iconsets/default/complete-no.png"] {
+  background-position: -100px -25px;
+  background-color: #900; /* background color */
+  color: rgba(0, 0, 0, 0.1); /* border color */
+}
+
+/* completed/filled */
+.required-tags .complete-yes,
+img[src$="/images/skins/iconsets/default/complete-yes.png"] {
+  background-position: -175px -25px;
+  background-color: #8bc101; /* background color */
+  color: rgba(0, 0, 0, 0.1); /* border color */
+}
+
+/*=== Bookmark symbols ===*/
+
+/* Rec */
+.status .rec,
+img[src$="/images/skins/iconsets/default/bookmark-rec.png"] {
+  background-position: -100px -50px;
+  background-color: #107cb9; /* background color */
+  color: rgba(0, 0, 0, 0.1); /* border color */
+}
+
+/* Public bookmark */
+.status .public, 
+img[src$="/images/skins/iconsets/default/bookmark-public.png"] {
+  background-position: -125px -50px;
+  background-color: #107cb9; /* change icon color here */
+  color: rgba(0, 0, 0, 0.1); /* border color */
+}
+
+/* Private bookmark */
+.status .private .text, 
+img[src$="/images/skins/iconsets/default/bookmark-private.png"] {
+  font-size: inherit;
+  text-indent: -9999px;
+  white-space: nowrap;   
+  background-position: -175px -50px;
+  background-color: #000; /* change lock color here */
+  color: #ddd; /* border color */
+}
+
+/* Hidden bookmark */
+.status .hidden, 
+img[src$="/images/skins/iconsets/default/bookmark-hidden.png"] {
+  background-position: -150px -50px;
+  background-color: #900; /* change lock color here */
+  color: #ddd; /* border color */
+}
+
+/*======= KUDOS AND RSS FEED SYMBOLS =======*/
+
+/* hide old kudos and rss symbols */
+a.rss span,
+p.kudos {
+  background: none;
+}
+
+/* new rss symbol */
+a.rss span::before {
+  content: "";
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  background-position: -150px -275px;
+  border-radius: 2px;
+  margin: 1px 0 0 -18px;
+  background-color: #ef851c; /* background color */
+  box-shadow: inset 0 0 0 1px; /* border */
+  color: rgba(0, 0, 0, 0.15); /* border color */
+}
+
+/* new kudos symbol */
+/* adding this with a pseudo element is necessary because otherwise the font color would also change */
+p.kudos::before {
+  content: "";
+  height: 55px;
+  width: 55px;
+  position: absolute;
+  background-position: -110px -580px;
+  margin: -0.5em -0.5em -0.5em -60px;
+  filter: invert(18%) sepia(86%) saturate(2463%) hue-rotate(345deg) brightness(88%) contrast(95%); /* adjust filter values to change color */
+}
+
+/*======= LOCK SYMBOL for restricted works =======*/
+
+img[src$="/images/lockblue.png"] {
+  width: 0 !important;
+  height: 0 !important;
+  padding: 15px 0 0 15px;
+  background-position: -151px -300px;
+  filter: invert(12%) sepia(100%) saturate(4991%) hue-rotate(244deg) brightness(71%) contrast(144%); /* adjust filter values to change color */
+}
+
+/*======= AO3 LOGO IN HEADER =======*/
+/* just delete the following part of the code if you don't want to replace the logo */
+
+#header .logo {
+  content: url("/images/logo.png"); /* this replaces the logo with a higher quality version */
+  /* you can add filters here to change the logo color */
+}
+
+/*=======================================================================================================================================*/
+
+@media only screen and (max-width: 42em) {
+  
+  /* resize little default profile icon in header */
+  #greeting img[src$="/images/skins/iconsets/default/icon_user.png"] {
+    background-position: 0px -16.5px;
+  }
+  
+  /* resize default icon in comments */
+  .comment img[src$="/images/skins/iconsets/default/icon_user.png"] {
+    padding: 55px 0 0 55px !important;
+    background-position: 0px -525px !important;
+  }
+}

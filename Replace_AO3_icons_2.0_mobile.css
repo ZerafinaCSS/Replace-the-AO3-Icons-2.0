@@ -1,0 +1,14 @@
+/*====================================================
+REPLACE THE AO3 ICONS - mobile fix
+====================================================*/
+
+/* resize little default profile icon in header */
+#greeting img[src$="/images/skins/iconsets/default/icon_user.png"] {
+  background-position: 0 -16.5px;
+}
+
+/* resize default icon in comments */
+.comment img[src$="/images/skins/iconsets/default/icon_user.png"] {
+  padding: 55px 0 0 55px !important;
+  background-position: 0px -525px !important;
+}
