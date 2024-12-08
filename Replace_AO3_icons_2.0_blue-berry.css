@@ -404,19 +404,3 @@ img[src$="/images/lockblue.png"] {
   content: url("/images/logo.png"); /* this replaces the logo with a higher quality version */
   filter: invert(62%) sepia(14%) saturate(1799%) hue-rotate(172deg) brightness(90%) contrast(86%); /* adjust filter values to change color */
 }
-
-/*=======================================================================================================================================*/
-
-@media only screen and (max-width: 42em) {
-  
-  /* resize little default profile icon in header */
-  #greeting img[src$="/images/skins/iconsets/default/icon_user.png"] {
-    background-position: 0px -16.5px;
-  }
-  
-  /* resize default icon in comments */
-  .comment img[src$="/images/skins/iconsets/default/icon_user.png"] {
-    padding: 55px 0 0 55px !important;
-    background-position: 0px -525px !important;
-  }
-}
