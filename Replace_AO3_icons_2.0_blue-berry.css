@@ -268,7 +268,7 @@ img[src$="/images/skins/iconsets/default/category-multi.png"] {
 .required-tags .category-other, 
 img[src$="/images/skins/iconsets/default/category-other.png"] {
   background-position: -125px 0px;
-  background-color: #2a2a2a; /* background color */
+  background-color: #6e6e6e; /* background color */
   color: rgba(0, 0, 0, 0.1); /* border color */
 }
 
@@ -402,5 +402,5 @@ img[src$="/images/lockblue.png"] {
 
 #header .logo {
   content: url("/images/logo.png"); /* this replaces the logo with a higher quality version */
-  filter: invert(62%) sepia(14%) saturate(1799%) hue-rotate(172deg) brightness(90%) contrast(86%); /* adjust filter values to change color */
+  filter: brightness(0) saturate(100%) invert(62%) sepia(14%) saturate(1799%) hue-rotate(172deg) brightness(90%) contrast(86%); /* adjust filter values to change color */
 }
