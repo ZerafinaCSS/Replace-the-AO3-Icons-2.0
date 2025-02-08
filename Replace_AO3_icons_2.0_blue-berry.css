@@ -94,14 +94,14 @@ img[src$="/images/skins/iconsets/default/icon_user.png"] {
 .comment .icon .anonymous {
   background-color: #6e6e6e; /* background color */
   box-shadow: inset 0 0 0 1.5px;  /* border */
-  color: rgba(0, 0, 0, 0.15); /* border color */
+  color: #00000025; /* border color */
 }
 
 /* guest comment icon */
 .comment .icon .visitor {
   background-color: #6e6e6e; /* background color */
   box-shadow: inset 0 0 0 1.5px; /* border */
-  color: rgba(0, 0, 0, 0.15); /* border color */
+  color: #00000025; /* border color */
 }
 
 /* default collection icon */
@@ -112,7 +112,7 @@ img[src$="/images/skins/iconsets/default/icon_collection.png"] {
   background-position: -100px -175px;
   background-color: #616C90; /* color for all collection icons */
   box-shadow: inset 0 0 0 1.5px; /* border */
-  color: rgba(0, 0, 0, 0.15); /* border color */
+  color: #00000025; /* border color */
 }
 
 /* default collection index icon */
@@ -127,7 +127,7 @@ img[src$="/images/skins/iconsets/default/icon_collection.png"] {
 .tag .primary .icon {
   background-color: #5998d6; /* background color */
   box-shadow: inset 0 0 0 1.5px; /* border */
-  color: rgba(0, 0, 0, 0.15); /* border color */
+  color: #00000025; /* border color */
 }
 
 /* icon for unrevealed works */
@@ -140,7 +140,7 @@ img[src$="/images/skins/iconsets/default/icon_collection.png"] {
 .admin .primary .icon {
   background-color: #5998d6; /* background color */
   box-shadow: inset 0 0 0 2px; /* border */
-  color: rgba(0, 0, 0, 0.75); /* border color */
+  color: #000000bf; /* border color */
 }
 
 /* default icon for AO3 skins */
@@ -185,9 +185,9 @@ img[src$="/images/skins/iconsets/default/warning-no.png"] {
 
 /*==== rating ====*/
 /*
-I use rgba colors (e.g. "color: rgba(0, 0, 0, 0.1)") to create transparent borders so that the background color of the icons shows through.
-This automatically gives the icons of the content symbols borders that have a slightly darker color than the background color.
-You can replace it with any other rgb, rgba or hex color.
+The content symbols have transparent borders, allowing the background color to show through.
+This automatically gives the icons borders that are a slightly darker color than the background color.
+You can replace the border color with any other rgb, rgba, or hex color, transparent or not.
 */
 
 /* General Audiences */
@@ -195,7 +195,7 @@ You can replace it with any other rgb, rgba or hex color.
 img[src$="/images/skins/iconsets/default/rating-general-audience.png"] {
   background-position: -50px -25px;
   background-color: #08b3bc; /* background color */
-  color: rgba(0, 0, 0, 0.1); /* border color */
+  color: #0000001a; /* border color */
 }
 
 /* Teen And Up Audiences */
@@ -203,7 +203,7 @@ img[src$="/images/skins/iconsets/default/rating-general-audience.png"] {
 img[src$="/images/skins/iconsets/default/rating-teen.png"] {
   background-position: 0px -25px;
   background-color: #5998d6; /* background color */
-  color: rgba(0, 0, 0, 0.1); /* border color */
+  color: #0000001a; /* border color */
 }
 
 /* Mature */
@@ -211,7 +211,7 @@ img[src$="/images/skins/iconsets/default/rating-teen.png"] {
 img[src$="/images/skins/iconsets/default/rating-mature.png"] {
   background-position: -75px -25px;
   background-color: #e8689b; /* background color */
-  color: rgba(0, 0, 0, 0.1); /* border color */
+  color: #0000001a; /* border color */
 }
 
 /* Explicit */
@@ -219,7 +219,7 @@ img[src$="/images/skins/iconsets/default/rating-mature.png"] {
 img[src$="/images/skins/iconsets/default/rating-explicit.png"] {
   background-position: -25px -25px;
   background-color: #a13374; /* background color */
-  color: rgba(0, 0, 0, 0.1); /* border color */
+  color: #0000001a; /* border color */
 }
 
 /*=== Relationships, pairings, orientations ===*/
@@ -229,7 +229,7 @@ img[src$="/images/skins/iconsets/default/rating-explicit.png"] {
 img[src$="/images/skins/iconsets/default/category-femslash.png"] {
   background-position: -25px 0px;
   background-color: #e8689b; /* background color */
-  color: rgba(0, 0, 0, 0.1); /* border color */
+  color: #0000001a; /* border color */
 }
 
 /* F/M */
@@ -237,7 +237,7 @@ img[src$="/images/skins/iconsets/default/category-femslash.png"] {
 img[src$="/images/skins/iconsets/default/category-het.png"] {
   background-position: -75px 0px;
   background-color: #a13374; /* background color */
-  color: rgba(0, 0, 0, 0.1); /* border color */
+  color: #0000001a; /* border color */
 }
 
 /* Gen */
@@ -245,7 +245,7 @@ img[src$="/images/skins/iconsets/default/category-het.png"] {
 img[src$="/images/skins/iconsets/default/category-gen.png"] {
   background-position: -50px 0;
   background-color: #08b3bc; /* background color */
-  color: rgba(0, 0, 0, 0.1); /* border color */
+  color: #0000001a; /* border color */
 }
 
 /* M/M */
@@ -253,7 +253,7 @@ img[src$="/images/skins/iconsets/default/category-gen.png"] {
 img[src$="/images/skins/iconsets/default/category-slash.png"] {
   background-position: 0px 0px;
   background-color: #5998d6; /* background color */
-  color: rgba(0, 0, 0, 0.1); /* border color */
+  color: #0000001a; /* border color */
 }
 
 /* Multi */
@@ -261,7 +261,7 @@ img[src$="/images/skins/iconsets/default/category-slash.png"] {
 img[src$="/images/skins/iconsets/default/category-multi.png"] {
   background: conic-gradient(#a13374 90deg, #5998d6 90deg 180deg, #e8689b 180deg 270deg, #08b3bc 270deg) !important;
   /* colors are in this order (not the same as displayed order): f/m, m/m, f/f, gen */
-  color: rgba(0, 0, 0, 0.1); /* border color */
+  color: #0000001a; /* border color */
 }
 
 /* Other relationships */
@@ -269,7 +269,7 @@ img[src$="/images/skins/iconsets/default/category-multi.png"] {
 img[src$="/images/skins/iconsets/default/category-other.png"] {
   background-position: -125px 0px;
   background-color: #6e6e6e; /* background color */
-  color: rgba(0, 0, 0, 0.1); /* border color */
+  color: #0000001a; /* border color */
 }
 
 /*=== Content warnings ===*/
@@ -279,7 +279,7 @@ img[src$="/images/skins/iconsets/default/category-other.png"] {
 img[src$="/images/skins/iconsets/default/warning-choosenotto.png"] {
   background-position: -125px -25px;
   background-color: #e8689b; /* background color */
-  color: rgba(0, 0, 0, 0.1); /* border color */
+  color: #0000001a; /* border color */
 }
 
 /* Warnings apply */
@@ -287,7 +287,7 @@ img[src$="/images/skins/iconsets/default/warning-choosenotto.png"] {
 img[src$="/images/skins/iconsets/default/warning-yes.png"] {
   background-position: -150px -25px;
   background-color: #a13374; /* background color */
-  color: rgba(0, 0, 0, 0.1); /* border color */
+  color: #0000001a; /* border color */
 }
 
 /* External work */
@@ -295,7 +295,7 @@ img[src$="/images/skins/iconsets/default/warning-yes.png"] {
 img[src$="/images/skins/iconsets/default/warning-external-work.png"] {
   background-position: -75px -50px;
   background-color: #5998d6; /* background color */
-  color: rgba(0, 0, 0, 0.1); /* border color */
+  color: #0000001a; /* border color */
 }
 
 /*=== Completion status ===*/
@@ -305,7 +305,7 @@ img[src$="/images/skins/iconsets/default/warning-external-work.png"] {
 img[src$="/images/skins/iconsets/default/complete-no.png"] {
   background-position: -100px -25px;
   background-color: #a13374; /* background color */
-  color: rgba(0, 0, 0, 0.1); /* border color */
+  color: #0000001a; /* border color */
 }
 
 /* completed/filled */
@@ -313,7 +313,7 @@ img[src$="/images/skins/iconsets/default/complete-no.png"] {
 img[src$="/images/skins/iconsets/default/complete-yes.png"] {
   background-position: -175px -25px;
   background-color: #08b3bc; /* background color */
-  color: rgba(0, 0, 0, 0.1); /* border color */
+  color: #0000001a; /* border color */
 }
 
 /*=== Bookmark symbols ===*/
@@ -323,7 +323,7 @@ img[src$="/images/skins/iconsets/default/complete-yes.png"] {
 img[src$="/images/skins/iconsets/default/bookmark-rec.png"] {
   background-position: -100px -50px;
   background-color: #5998d6; /* background color */
-  color: rgba(0, 0, 0, 0.1); /* border color */
+  color: #0000001a; /* border color */
 }
 
 /* Public bookmark */
@@ -331,7 +331,7 @@ img[src$="/images/skins/iconsets/default/bookmark-rec.png"] {
 img[src$="/images/skins/iconsets/default/bookmark-public.png"] {
   background-position: -125px -50px;
   background-color: #5998d6; /* change icon color here */
-  color: rgba(0, 0, 0, 0.1); /* border color */
+  color: #0000001a; /* border color */
 }
 
 /* Private bookmark */
@@ -372,7 +372,7 @@ a.rss span::before {
   margin: 1px 0 0 -18px;
   background-color: #e8689b; /* background color */
   box-shadow: inset 0 0 0 1px; /* border */
-  color: rgba(0, 0, 0, 0.15); /* border color */
+  color: #00000025; /* border color */
 }
 
 /* new kudos symbol */
