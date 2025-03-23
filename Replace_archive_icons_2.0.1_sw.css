@@ -77,8 +77,8 @@ img[src$="/images/skins/iconsets/default/icon_user.png"] {
 }
 
 /* default icon for skins */
-.skins .primary .icon,
-.index .skins .icon {
+.skins .primary .icon:not(:has(a .icon)),
+.index .skins .icon:not(:has(a .icon)) {
   box-sizing: border-box;
   background: url("https://images.squidge.org/images/2025/02/15/zerafina_icon_skins_02.png"); /* url of new icon */
   background-size: cover;
