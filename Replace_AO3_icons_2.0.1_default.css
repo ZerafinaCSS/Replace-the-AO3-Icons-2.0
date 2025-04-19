@@ -38,7 +38,7 @@ img[src$="/images/skins/iconsets/default/icon_user.png"] {
 }
 
 /* default collection icon */
-.collection .icon img[src$="/images/skins/iconsets/default/icon_collection.png"] {
+img[src$="/images/skins/iconsets/default/icon_collection.png"] {
   box-sizing: border-box;
   content: url("https://images.squidge.org/images/2025/02/09/zerafina_icon_collection_01.png"); /* url of new icon */
   background: linear-gradient(transparent, #ffffff50 45% 55%, transparent); /* subtle gradient */
