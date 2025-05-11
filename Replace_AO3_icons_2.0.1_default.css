@@ -344,7 +344,6 @@ p.kudos {
 }
 
 /* new kudos symbol */
-/* adding this with a pseudo element is necessary because otherwise the font color would also change when you use filters */
 div #kudos::before {
   content: "";
   height: 55px;
