@@ -1,5 +1,5 @@
 /*============================================================
-REPLACE THE ARCHIVE ICONS - SquidgeWorld Version
+REPLACE THE ARCHIVE ICONS - SquidgeWorld Archive Version
 ============================================================*/ 
 
 ul.required-tags,
@@ -352,36 +352,45 @@ img[src$="/images/skins/iconsets/default/bookmark-hidden.png"] {
 
 /*========== KUDOS AND RSS FEED SYMBOLS ==========*/
 
-/* hide old kudos and rss symbols */
-a.rss span,
+/* hide old rss symbol */
+a.rss span {
+  padding: 0;
+  background: none;
+}
+
+/* setup for the new rss symbol */
+.actions li a.rss {
+	display: inline-flex;
+  align-content: center;
+	align-items: center;
+	column-gap: 0.3em;
+}
+
+/* new rss symbol */
+.actions li a.rss::before {
+  content: "";
+  height: 0.85em;
+  width: 0.85em;
+  background-image: url("https://images.squidge.org/images/2025/02/09/zerafina_icon_rss_01.png"); /* url of new icon */
+  background-size: cover;
+  background-color: #ef851c; /* background color */
+  box-shadow: inset 0 0 0 1px; /* border */
+	border-radius: 2px;
+  color: #00000025; /* change border color here */
+}
+  
+/* hide old kudos symbol */
 p.kudos {
   background: none;
 }
 
-/* new rss symbol */
-a.rss span::before {
-  content: "";
-  height: 14px;
-  width: 14px;
-  position: absolute;
-  background-image: url("https://images.squidge.org/images/2025/02/09/zerafina_icon_rss_01.png"); /* url of new icon */
-  background-size: cover;
-  border-radius: 2px;
-  margin: 1px 0 0 -18px;
-  background-color: #ef851c; /* background color */
-  box-shadow: inset 0 0 0 1px; /* border */
-  color: #00000025; /* change border color here */
-}
-
 /* new kudos symbol */
-/* adding this with a pseudo element is necessary because otherwise the font color would also change when you use filters */
-p.kudos::before {
+div #kudos::before {
   content: "";
   height: 55px;
   width: 55px;
   position: absolute;
-  margin: -0.5em -0.5em -0.5em -60px;
-  background-image: url("https://images.squidge.org/images/2025/02/15/zerafina_icon_kudos_02.png"); /* url of new icon */
+  background-image: url("https://images.squidge.org/images/2025/04/17/zerafina_icon_kudos_03.png"); /* url of new icon */
   background-size: cover;
   /* filter: invert(67%) sepia(28%) saturate(406%) hue-rotate(31deg) brightness(96%) contrast(90%); *//* adjust filter values to change color */
   /* SquidgeWorld doesn't allow filters atm (February 9 2025) but I'm leaving this here in case that changes in the future */
