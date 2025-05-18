@@ -344,7 +344,7 @@ p.kudos {
 }
 
 /* new kudos symbol */
-div #kudos::before {
+div:has(> p.kudos)::before {
   content: "";
   height: 55px;
   width: 55px;
