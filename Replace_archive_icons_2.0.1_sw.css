@@ -5,7 +5,7 @@ REPLACE THE ARCHIVE ICONS - SquidgeWorld Version
 ul.required-tags,
 .bookmark .status span,
 .blurb .icon {
-	opacity: 1 !important; /* some public site skins like Reversi set the opacity of some icons to 0.9, which I want to prevent here */
+  opacity: 1 !important; /* some public site skins like Reversi set the opacity of some icons to 0.9, which I want to prevent here */
 }
 
 /*========== ICONS FOR USERS, COLLECTIONS, TAGS etc. ==========*/
@@ -203,7 +203,7 @@ img[src$="/images/skins/iconsets/default/category-slash.png"] {
 /* Multi */
 .required-tags .category-multi, 
 img[src$="/images/skins/iconsets/default/category-multi.png"] {
- 	background: conic-gradient(from 360deg, #b0021f 12.5%, #910679 12.5% 25%, #b8860b 25% 37.5%, #8bc101 37.5% 50%, #0054d4 50% 62.5%, #7625bc 62.5% 75%, #007faf 75% 87.5%, #249c81 87.5%); /* conic gradient with the colors of the relationship icons */
+  background: conic-gradient(from 360deg, #b0021f 12.5%, #910679 12.5% 25%, #b8860b 25% 37.5%, #8bc101 37.5% 50%, #0054d4 50% 62.5%, #7625bc 62.5% 75%, #007faf 75% 87.5%, #249c81 87.5%); /* conic gradient with the colors of the relationship icons */
   color: #0000001a; /* change border color here */
 }
 
