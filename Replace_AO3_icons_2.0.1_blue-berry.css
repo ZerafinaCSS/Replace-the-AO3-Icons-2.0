@@ -5,7 +5,7 @@ REPLACE THE AO3 ICONS - reversi / berry blue color scheme
 ul.required-tags,
 .bookmark .status span,
 .blurb .icon {
-	opacity: 1 !important; /* some public site skins like Reversi set the opacity of some icons to 0.9, which I want to prevent here */
+  opacity: 1 !important; /* some public site skins like Reversi set the opacity of some icons to 0.9, which I want to prevent here */
 }
 
 /*========== ICONS FOR USERS, COLLECTIONS, TAGS etc. ==========*/
@@ -206,7 +206,7 @@ img[src$="/images/skins/iconsets/default/category-slash.png"] {
 /* Multi */
 .required-tags .category-multi, 
 img[src$="/images/skins/iconsets/default/category-multi.png"] {
- 	background: conic-gradient(from 270deg, #08b3bc 25%, #a13374 25% 50%, #5998d6 50% 75%, #e8689b 75%); /* conic gradient with the colors of the relationship icons */
+  background: conic-gradient(from 270deg, #08b3bc 25%, #a13374 25% 50%, #5998d6 50% 75%, #e8689b 75%); /* conic gradient with the colors of the relationship icons */
   color: #0000001a; /* change border color here */
 }
 
