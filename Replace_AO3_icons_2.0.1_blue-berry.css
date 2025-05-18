@@ -319,10 +319,10 @@ a.rss span {
 
 /* setup for the new rss symbol */
 .actions li a.rss {
-	display: inline-flex;
+  display: inline-flex;
   align-content: center;
-	align-items: center;
-	column-gap: 0.3em;
+  align-items: center;
+  column-gap: 0.3em;
 }
 
 /* new rss symbol */
@@ -334,7 +334,7 @@ a.rss span {
   background-size: cover;
   background-color: #e8689b; /* background color */
   box-shadow: inset 0 0 0 1px; /* border */
-	border-radius: 2px;
+  border-radius: 2px;
   color: #00000025; /* change border color here */
 }
   
