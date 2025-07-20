@@ -123,7 +123,7 @@ img[src$="/images/skins/iconsets/default/warning-no.png"] {
 }
 
 /*
-Most of the following content symbols have transparent borders, allowing the background to show through.
+The following content symbols have transparent borders, allowing the background to show through.
 This automatically gives the icons borders that have a slightly darker color than the background color.
 You can replace the border color with any other rgb, rgba, or hex color, transparent or not.
 */
@@ -292,15 +292,15 @@ img[src$="/images/skins/iconsets/default/bookmark-hidden.png"] {
   color: #00000040; /* change border color here */
 }
 
-/*========== KUDOS AND RSS FEED SYMBOLS ==========*/
+/*========== RSS ICON ==========*/
 
-/* hide old rss symbol */
+/* hide old rss icon */
 a.rss span {
   padding: 0;
   background: none;
 }
 
-/* setup for the new rss symbol */
+/* setup for the new rss icon */
 .actions li a.rss {
   display: inline-flex;
   align-content: center;
@@ -308,7 +308,7 @@ a.rss span {
   column-gap: 0.3em;
 }
 
-/* new rss symbol */
+/* new rss icon */
 .actions li a.rss::before {
   content: "";
   height: 0.85em;
@@ -321,12 +321,14 @@ a.rss span {
   color: #00000025; /* change border color here */
 }
 
-/* hide old kudos symbol */
+/*========== KUDOS ICON ==========*/
+
+/* hide old kudos icon */
 p.kudos {
   background: none;
 }
 
-/* new kudos symbol */
+/* new kudos icon */
 div:has(> p.kudos)::before {
   content: "";
   height: 55px;
@@ -337,14 +339,14 @@ div:has(> p.kudos)::before {
   filter: invert(62%) sepia(14%) saturate(1799%) hue-rotate(172deg) brightness(90%) contrast(86%); /* adjust filter values to change color */
 }
 
-/*========== LOCK SYMBOL for restricted works ==========*/
+/*========== LOCK ICON for restricted works ==========*/
 
 img[src$="/images/lockblue.png"] {
   content: url("https://i.ibb.co/kVCsBwzY/zerafina-icon-lock-01.png"); /* url of new icon */
   filter: invert(62%) sepia(14%) saturate(1799%) hue-rotate(172deg) brightness(90%) contrast(86%); /* adjust filter values to change color */
 }
 
-/*======= AO3 LOGO IN HEADER =======*/
+/*========== AO3 LOGO IN HEADER ==========*/
 /* just delete the following part of the code if you don't want to replace the logo */
 
 #header .logo {
