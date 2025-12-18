@@ -14,82 +14,99 @@ ul.required-tags,
 /* default user icon */
 img[src$="/images/skins/iconsets/default/icon_user.png"] {
   box-sizing: border-box;
-  content: url("https://i.ibb.co/bMPMMcyh/zerafina-icon-user-default-01.png"); /* url of new icon */
-  background-color: #6e6e6e; /* change icon color here */
   border: 1.5px solid #ddd; /* change border width and color here */
+  background:
+    #6e6e6e /* change icon color here */
+    content-box;
+  content: url("https://zerafinacss.github.io/ao3/icons/user-default-01.png"); /* url of new icon */
 }
 
 /* anon comment icon */
 .comment .icon .anonymous {
   box-sizing: border-box;
-  background: url("https://i.ibb.co/1tbz1GYk/zerafina-icon-anon-01.png"); /* url of new icon */
-  background-size: cover;
-  background-color: #6e6e6e; /* change background color here */
   border: 1.5px solid #00000025; /* change border width and color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/anon-01.png"), /* url of new icon */
+    #6e6e6e /* change background color here */
+    border-box;
+  background-size: cover;
 }
 
 /* guest comment icon */
-.comment .icon .visitor { 
+.comment .icon .visitor {
   box-sizing: border-box;
-  background: url("https://i.ibb.co/1GL4vLkM/zerafina-icon-user-visitor-01.png"); /* url of new icon */
-  background-size: cover;
-  background-color: #6e6e6e; /* change background color here */
   border: 1.5px solid #00000025; /* change border width and color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/user-visitor-01.png"), /* url of new icon */
+    #6e6e6e /* change background color here */
+    border-box;
+  background-size: cover;
 }
 
 /* default collection icon */
 img[src$="/images/skins/iconsets/default/icon_collection.png"] {
   box-sizing: border-box;
-  content: url("https://i.ibb.co/Z6Vw4X7R/zerafina-icon-collection-01.png"); /* url of new icon */
-  background-image: linear-gradient(transparent, #ffffff50 45% 55%, transparent); /* subtle gradient */
-  background-color: #616c90; /* change background color here */
   border: 1.5px solid #00000025; /* change border width and color here */
+  background:
+    linear-gradient(transparent, #ffffff50 45% 55%, transparent), /* subtle gradient */
+    #616c90 /* change background color here */
+    border-box;
+  content: url("https://zerafinacss.github.io/ao3/icons/collection-01.png"); /* url of new icon */
 }
 
 /* tag icons */
-.tagset .primary .icon, 
+.tagset .primary .icon,
 .tag .primary .icon,
 .index .tagset .icon {
   box-sizing: border-box;
-  background: url("https://i.ibb.co/Y4QDmRvt/zerafina-icon-tag-01.png"), /* url of new icon */
-    linear-gradient(transparent, #ffffff50 45% 55%, transparent); /* subtle gradient */
-  background-size: cover;
-  background-color: #900; /* change background color here */
   border: 1.5px solid #00000025; /* change border width and color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/tag-01.png"), /* url of new icon */
+    linear-gradient(transparent, #ffffff50 45% 55%, transparent), /* subtle gradient */
+    #900 /* change background color here */
+    border-box;
+  background-size: cover;
 }
 
 /* icon for unrevealed works */
 .index .mystery .icon {
   box-sizing: border-box;
-  background: url("https://i.ibb.co/1tbz1GYk/zerafina-icon-anon-01.png"), /* url of new icon */
-    linear-gradient(transparent, #ffffff50 45% 55%, transparent); /* subtle gradient */
-  background-size: cover;
-  background-color: #616c90; /* change background color here */
   border: 1.5px solid #ddd; /* change width and color of outer border here */
   box-shadow: inset 0 0 0 3px #fff; /* change width and color of inner border here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/anon-01.png"), /* url of new icon */
+    linear-gradient(transparent, #ffffff50 45% 55%, transparent) /* subtle gradient */
+    #616c90 /* change background color here */
+    content-box;
+  background-size: cover;
 }
 
 /* admin icon => seen on news posts */
 .admin .primary .icon {
   box-sizing: border-box;
-  background: url("https://i.ibb.co/HTz7zh4K/zerafina-icon-admin-01.png") /* url of new icon */ no-repeat, 
-    linear-gradient(#ffffff40, transparent); /* subtle gradient */
-  background-size: cover;
-  background-color: #900; /* change background color here */
   border: 1.5px solid #00000099; /* change border width and color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/admin-01.png") /* url of new icon */
+    no-repeat,
+    linear-gradient(#ffffff40, transparent) /* subtle gradient */
+    #900 /* change background color here */
+    border-box;
+  background-size: cover;
 }
 
 /* default icon for skins */
 .skins .primary .icon:not(:has(a .icon)),
 .index .skins .icon:not(:has(a .icon)) {
   box-sizing: border-box;
-  background: url("https://i.ibb.co/k6gSr1MS/zerafina-icon-skins-01.png"); /* url of new icon */
-  background-size: cover;
-  background-color: #900; /* change icon color here */
   border: 1.5px solid #ddd; /* change border width and color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/skins-01.png"), /* url of new icon */
+    #900 /* change icon color here */
+    border-box;
+  background-size: cover;
 }
 
-/*========== CONTENT SYMBOLS ==========*/
+/*>========== CONTENT SYMBOLS ==========<*/
 
 /* sets the size of the symbols keys icons */
 #symbols-key dl img,
@@ -100,26 +117,26 @@ img[src$="/images/skins/iconsets/default/icon_collection.png"] {
 }
 
 /* sizing and borders for content symbols */
-.blurb ul.required-tags li span,
-.bookmark .status span:not(.status .private),
+.blurb ul.required-tags li a > span,
+.bookmark p.status a > span,
 #symbols-key dl img,
 #bookmark-symbols-key img {
-  background-size: cover;
-  background-origin: border-box;
   box-sizing: border-box;
   border: 1px solid; /* change border width here or delete this if you don't want the borders */
+  background-size: cover;
+  background-origin: border-box;
 }
 
 /* empty symbols boxes (no rating, category or warning) */
 .required-tags .rating-notrated,
-.required-tags .category-none, 
-.required-tags .warning-no, 
+.required-tags .category-none,
+.required-tags .warning-no,
 .status .count,
 img[src$="/images/skins/iconsets/default/rating-notrated.png"],
 img[src$="/images/skins/iconsets/default/category-none.png"],
 img[src$="/images/skins/iconsets/default/warning-no.png"] {
-  background: #ffffffcc; /* change background color here */
   color: #00000040; /* change border color here */
+  background: #ffffffcc; /* change background color here */
 }
 
 /*
@@ -128,171 +145,195 @@ This automatically gives the icons borders that have a slightly darker color tha
 You can replace the border color with any other rgb, rgba, or hex color, transparent or not.
 */
 
-/*===== Rating =====*/
+/*>>========== Rating ==========<<*/
 
 /* General Audiences */
 .required-tags .rating-general-audience,
 img[src$="/images/skins/iconsets/default/rating-general-audience.png"] { 
-  background: url("https://i.ibb.co/cXk9HdYH/zerafina-icon-rating-gen-01.png"); /* url of new icon */
-  background-color: #8bc101; /* change background color here */
   color: #0000001a; /* change border color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/rating-gen-01.png"), /* url of new icon */
+    #8bc101; /* change background color here */
 }
 
 /* Teen And Up Audiences */
 .required-tags .rating-teen,
-img[src$="/images/skins/iconsets/default/rating-teen.png"] { 
-  background: url("https://i.ibb.co/xSmwW6CN/zerafina-icon-rating-teen-01.png"); /* url of new icon */
-  background-color: #f5ce00; /* change background color here */
+img[src$="/images/skins/iconsets/default/rating-teen.png"] {
   color: #0000001a; /* change border color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/rating-teen-01.png"), /* url of new icon */
+    #f5ce00; /* change background color here */
 }
 
 /* Mature */
 .required-tags .rating-mature,
-img[src$="/images/skins/iconsets/default/rating-mature.png"] { 
-  background: url("https://i.ibb.co/chYzvd2w/zerafina-icon-rating-mature-01.png"); /* url of new icon */
-  background-color: #ef851c; /* change background color here */
+img[src$="/images/skins/iconsets/default/rating-mature.png"] {
   color: #0000001a; /* change border color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/rating-mature-01.png"), /* url of new icon */
+    #ef851c; /* change background color here */
 }
 
 /* Explicit */
 .required-tags .rating-explicit,
-img[src$="/images/skins/iconsets/default/rating-explicit.png"] { 
-  background: url("https://i.ibb.co/Kp2nk21k/zerafina-icon-rating-explicit-01.png"); /* url of new icon */
-  background-color: #b0021f; /* change background color here */
+img[src$="/images/skins/iconsets/default/rating-explicit.png"] {
   color: #0000001a; /* change border color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/rating-explicit-01.png"), /* url of new icon */
+    #b0021f; /* change background color here */
 }
 
-/*===== Relationships, pairings, orientations =====*/
+/*>>========== Relationships, pairings, orientations ==========<<*/
 
 /* F/F */
-.required-tags .category-femslash, 
+.required-tags .category-femslash,
 img[src$="/images/skins/iconsets/default/category-femslash.png"] {
-  background: url("https://i.ibb.co/JwHx18Ht/zerafina-icon-category-ff-01.png"); /* url of new icon */
-  background-color: #b0021f; /* change background color here */
   color: #0000001a; /* change border color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/category-ff-01.png"), /* url of new icon */
+    #b0021f; /* change background color here */
 }
 
 /* F/M */
-.required-tags .category-het, 
+.required-tags .category-het,
 img[src$="/images/skins/iconsets/default/category-het.png"] {
-  background: url("https://i.ibb.co/0yD62BY2/zerafina-icon-category-mf-01.png"); /* url of new icon */
-  background-color: #910679; /* change background color here */
   color: #0000001a; /* change border color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/category-mf-01.png"), /* url of new icon */
+    #910679; /* change background color here */
 }
 
 /* Gen */
 .required-tags .category-gen,
 img[src$="/images/skins/iconsets/default/category-gen.png"] {
-  background: url("https://i.ibb.co/8gwHmMQX/zerafina-icon-category-gen-01.png"); /* url of new icon */
-  background-color: #8bc101; /* change background color here */
   color: #0000001a; /* change border color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/category-gen-01.png"), /* url of new icon */
+    #8bc101; /* change background color here */
 }
 
 /* M/M */
 .required-tags .category-slash,
 img[src$="/images/skins/iconsets/default/category-slash.png"] {
-  background: url("https://i.ibb.co/GQ2YZ686/zerafina-icon-category-mm-01.png"); /* url of new icon */
-  background-color: #0054d4; /* change background color here */
   color: #0000001a; /* change border color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/category-mm-01.png"), /* url of new icon */
+    #0054d4; /* change background color here */
 }
 
 /* Multi */
-.required-tags .category-multi, 
+.required-tags .category-multi,
 img[src$="/images/skins/iconsets/default/category-multi.png"] {
-  background: conic-gradient(from 270deg, #8bc101 25%, #910679 25% 50%, #0054d4 50% 75%, #b0021f 75%); /* conic gradient with the colors of the relationship icons */
   color: #0000001a; /* change border color here */
+  background:
+    conic-gradient(from 270deg, #8bc101 25%, #910679 25% 50%, #0054d4 50% 75%, #b0021f 75%); /* conic gradient with the colors of the relationship icons */
 }
 
 /* Other relationships */
-.required-tags .category-other, 
+.required-tags .category-other,
 img[src$="/images/skins/iconsets/default/category-other.png"] {
-  background: url("https://i.ibb.co/MD6r4zyH/zerafina-icon-category-other-01.png"); /* url of new icon */
-  background-color: #000; /* change background color here */
   color: #0000001a; /* change border color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/category-other-01.png"), /* url of new icon */
+    #000; /* change background color here */
 }
 
-/*===== Content warnings =====*/
+/*>>========== Content warnings ==========<<*/
 
 /* Author chose not to warn */
-.required-tags .warning-choosenotto, 
+.required-tags .warning-choosenotto,
 img[src$="/images/skins/iconsets/default/warning-choosenotto.png"] {
-  background: url("https://i.ibb.co/m5Yk1TtQ/zerafina-icon-warning-choosenotto-01.png"); /* url of new icon */
-  background-color: #ef851c; /* change background color here */
   color: #0000001a; /* change border color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/warning-choosenotto-01.png"), /* url of new icon */
+    #ef851c; /* change background color here */
 }
 
 /* Warnings apply */
 .required-tags .warning-yes,
-img[src$="/images/skins/iconsets/default/warning-yes.png"] { 
-  background: url("https://i.ibb.co/Jj9yFqFq/zerafina-icon-warning-yes-01.png"); /* url of new icon */
-  background-color: #b0021f; /* change background color here */
+img[src$="/images/skins/iconsets/default/warning-yes.png"] {
   color: #0000001a; /* change border color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/warning-yes-01.png"), /* url of new icon */
+    #b0021f; /* change background color here */
 }
 
 /* External work */
 .required-tags .external-work,
 img[src$="/images/skins/iconsets/default/warning-external-work.png"] {
-  background: url("https://i.ibb.co/GQG1C3vw/zerafina-icon-warning-external-work-01.png"); /* url of new icon */
-  background-color: #107cb9; /* change background color here */
   color: #0000001a; /* change border color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/warning-external-work-01.png"), /* url of new icon */
+    #107cb9; /* change background color here */
 }
 
-/*===== Completion status =====*/
+/*>>========== Completion status ==========<<*/
 
 /* uncomplete/unfulfilled */
-.required-tags .complete-no, 
-img[src$="/images/skins/iconsets/default/complete-no.png"] { 
-  background: url("https://i.ibb.co/pYzPL49/zerafina-icon-complete-no-01.png"); /* url of new icon */
-  background-color: #b0021f; /* change background color here */
+.required-tags .complete-no,
+img[src$="/images/skins/iconsets/default/complete-no.png"] {
   color: #0000001a; /* change border color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/complete-no-01.png"), /* url of new icon */
+    #b0021f; /* change background color here */
 }
 
 /* completed/filled */
 .required-tags .complete-yes,
-img[src$="/images/skins/iconsets/default/complete-yes.png"] { 
-  background: url("https://i.ibb.co/6JBN1vhz/zerafina-icon-complete-yes-01.png"); /* url of new icon */
-  background-color: #8bc101; /* change background color here */
+img[src$="/images/skins/iconsets/default/complete-yes.png"] {
   color: #0000001a; /* change border color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/complete-yes-01.png"), /* url of new icon */
+    #8bc101; /* change background color here */
 }
 
-/*===== Bookmark symbols =====*/
+/*>>========== Bookmark symbols ==========<<*/
 
-/* Rec */
+/* Rec bookmark */
 .status .rec,
-img[src$="/images/skins/iconsets/default/bookmark-rec.png"] { 
-  background: url("https://i.ibb.co/jPq89bqP/zerafina-icon-bookmark-rec-01.png"); /* url of new icon */
-  background-color: #107cb9; /* change background color here */
+img[src$="/images/skins/iconsets/default/bookmark-rec.png"] {
   color: #0000001a; /* change border color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/bookmark-rec-01.png"), /* url of new icon */
+    #107cb9; /* change background color here */
 }
 
 /* Public bookmark */
 .status .public, 
-img[src$="/images/skins/iconsets/default/bookmark-public.png"] { 
-  background: url("https://i.ibb.co/07Wtk6D/zerafina-icon-bookmark-public-01.png"); /* url of new icon */
-  background-color: #107cb9; /* change background color here */
+img[src$="/images/skins/iconsets/default/bookmark-public.png"] {
   color: #0000001a; /* change border color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/bookmark-public-01.png"), /* url of new icon */
+    #107cb9; /* change background color here */
 }
 
 /* Private bookmark */
-.status .private .text, 
+.status .private, 
 img[src$="/images/skins/iconsets/default/bookmark-private.png"] {
-  font-size: inherit;
-  text-indent: -9999px;
-  white-space: nowrap;
-  background: url("https://i.ibb.co/4gSvnrkb/zerafina-icon-bookmark-locked-01.png"); /* url of new icon */
-  background-color: #000; /* change lock color here */
-  color: #00000040; /* change border color here */
+  color: #0000001a; /* change border color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/bookmark-locked-01.png"), /* url of new icon */
+    #000; /* change lock color here */
+  font-size: 0;
+}
+
+/* fix private bookmark */
+.status .private .text {
+  background: none;
+  /* This seems to be the only bookmark icon where the background is put in the .text element instead of it's parent.
+  I want it to match the rest, so I'm hiding the background of the .text element. */
 }
 
 /* Hidden bookmark */
-.status .hidden, 
+.status .hidden,
 img[src$="/images/skins/iconsets/default/bookmark-hidden.png"] {
-  background: url("https://i.ibb.co/4gSvnrkb/zerafina-icon-bookmark-locked-01.png"); /* url of new icon */
-  background-color: #b0021f; /* change lock color here */
-  color: #00000040; /* change border color here */
+  color: #0000001a; /* change border color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/bookmark-locked-01.png"), /* url of new icon */
+    #b0021f; /* change lock color here */
 }
 
-/*========== RSS ICON ==========*/
+/*>========== RSS ICON ==========<*/
 
 /* hide old rss icon */
 a.rss span {
@@ -303,25 +344,26 @@ a.rss span {
 /* setup for the new rss icon */
 .actions li a.rss {
   display: inline-flex;
-  align-content: center;
-  align-items: center;
-  column-gap: 0.3em;
+    align-content: center;
+    align-items: center;
+    column-gap: 0.3em;
 }
 
 /* new rss icon */
 .actions li a.rss::before {
-  content: "";
-  height: 0.85em;
+  box-sizing: border-box;
   width: 0.85em;
-  background-image: url("https://i.ibb.co/35VLs1PW/zerafina-icon-rss-01.png"); /* url of new icon */
-  background-size: cover;
-  background-color: #ef851c; /* background color */
-  box-shadow: inset 0 0 0 1px; /* border */
+  height: 0.85em;
+  border: 1px solid var(--icon-border1);
   border-radius: 2px;
-  color: #00000025; /* change border color here */
+  background:
+    url("https://zerafinacss.github.io/ao3/icons/rss-01.png") /* url of new icon */
+     #ef851c; /* change background color here */
+  background-size: cover;
+  content: "";
 }
 
-/*========== KUDOS ICON ==========*/
+/*>========== KUDOS ICON ==========<*/
 
 /* hide old kudos icon */
 p.kudos {
@@ -330,19 +372,19 @@ p.kudos {
 
 /* new kudos icon */
 div:has(> p.kudos)::before {
-  content: "";
-  height: 55px;
-  width: 55px;
   position: absolute;
-  background-image: url("https://i.ibb.co/8gxgCYb4/zerafina-icon-kudos-01.png"); /* url of new icon */
+  width: 55px;
+  height: 55px;
+  background: url("https://zerafinacss.github.io/ao3/icons/kudos-01.png"); /* url of new icon */
   background-size: cover;
+  content: "";
   filter: invert(18%) sepia(86%) saturate(2463%) hue-rotate(345deg) brightness(88%) contrast(95%); /* adjust filter values to change color */
 }
 
-/*========== LOCK ICON for restricted works ==========*/
+/*>========== LOCK ICON for restricted works ==========<*/
 
 img[src$="/images/lockblue.png"] {
-  content: url("https://i.ibb.co/kVCsBwzY/zerafina-icon-lock-01.png"); /* url of new icon */
+  content: url("https://zerafinacss.github.io/ao3/icons/lock-01.png"); /* url of new icon */
   filter: invert(12%) sepia(100%) saturate(4991%) hue-rotate(244deg) brightness(71%) contrast(144%); /* adjust filter values to change color */
 }
 
