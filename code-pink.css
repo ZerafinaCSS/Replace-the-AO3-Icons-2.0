@@ -1,6 +1,16 @@
 /*============================================================
-REPLACE THE AO3 ICONS - pink color scheme
-============================================================*/ 
+
+                  Replace the AO3 Icons 2.0
+                      Color scheme: Pink
+
+                        by ZerafinaCSS
+
+=============================================================*/
+
+.skin-credit {
+  content: "Replace the AO3 Icons 2.0 by ZerafinaCSS
+  https://archiveofourown.org/works/57331222";
+}
 
 ul.required-tags,
 .bookmark .status span,
