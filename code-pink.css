@@ -3,13 +3,19 @@
                   Replace the AO3 Icons 2.0
                       Color scheme: Pink
 
-                        by ZerafinaCSS
-
 =============================================================*/
 
-.skin-credit {
-  content: "Replace the AO3 Icons 2.0 by ZerafinaCSS
-  https://archiveofourown.org/works/57331222";
+.site-skin-metadata {
+  content: "==================================================
+
+  - Skin:         Replace the AO3 Icons 2.0 (Color scheme: Pink)
+  - Author:       ZerafinaCSS [https://www.tumblr.com/zerafinacss]
+  - Instructions: https://ao3.org/works/57331222
+  - Repository:   https://github.com/ZerafinaCSS/Replace-the-AO3-Icons-2.0
+  - License:      MIT
+  - Updated:      2026-Mar-08 20:22 UTC (no code changes)
+
+  ==========================================================";
 }
 
 ul.required-tags,
