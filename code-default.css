@@ -9,11 +9,11 @@
   content: "==================================================
 
   - Skin:         Replace the AO3 Icons 2.0 (Color scheme: Default)
-  - Author:       ZerafinaCSS [https://www.tumblr.com/zerafinacss]
+  - Author:       ZerafinaCSS [https://tumblr.com/zerafinacss]
   - Instructions: https://ao3.org/works/57331222
   - Repository:   https://github.com/ZerafinaCSS/Replace-the-AO3-Icons-2.0
   - License:      MIT
-  - Updated:      2026-Mar-08 20:22 UTC (no code changes)
+  - Updated:      2026-Mar-21 11:10 UTC
 
   ==========================================================";
 }
@@ -135,6 +135,7 @@ img[src$="/images/skins/iconsets/default/icon_collection.png"] {
 /* sizing and borders for content symbols */
 .blurb ul.required-tags li a > span,
 .bookmark p.status a > span,
+.bookmark p.status .count,
 #symbols-key dl img,
 #bookmark-symbols-key img {
   box-sizing: border-box;
@@ -147,7 +148,7 @@ img[src$="/images/skins/iconsets/default/icon_collection.png"] {
 .required-tags .rating-notrated,
 .required-tags .category-none,
 .required-tags .warning-no,
-.status .count,
+.bookmark p.status .count,
 img[src$="/images/skins/iconsets/default/rating-notrated.png"],
 img[src$="/images/skins/iconsets/default/category-none.png"],
 img[src$="/images/skins/iconsets/default/warning-no.png"] {
@@ -399,9 +400,16 @@ div:has(> p.kudos)::before {
 
 /*>========== LOCK ICON for restricted works ==========<*/
 
+/* only visible for logged in users */
 img[src$="/images/lockblue.png"] {
   content: url("https://zerafinacss.github.io/ao3/icons/lock-01.png"); /* url of new icon */
   filter: invert(12%) sepia(100%) saturate(4991%) hue-rotate(244deg) brightness(71%) contrast(144%); /* adjust filter values to change color */
+}
+
+/* hidden by admin */
+img[src$="/images/lockred.png"] {
+  content: url("https://zerafinacss.github.io/ao3/icons/lock-01.png"); /* url of new icon */
+  filter: brightness(0) saturate(100%) invert(14%) sepia(41%) saturate(7481%) hue-rotate(340deg) brightness(85%) contrast(111%); /* adjust filter values to change color */
 }
 
 /*========== AO3 LOGO IN HEADER ==========*/
